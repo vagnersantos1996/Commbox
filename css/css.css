@@ -1,0 +1,241 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #FFF;
+	font-size:16px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a:visited,
+a {
+	text-decoration:none;
+	color:#FFF;
+}
+
+input, textarea, select { 
+  outline: none;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	border-radius:5px;
+	border:2px solid #C61B21;
+	padding:5px 10px;
+	background-color:#FFF;
+	cursor:pointer;
+	color:#C61B21;
+	font-size:16px;
+	margin-top:10px;
+	transition:0.3s;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover {
+	background-color:#C61B21;
+	color:#FFF;
+}
+
+header {
+	position:fixed;
+	width:100%;
+	left:0;
+	top:0;
+	background-color:#C61B21;
+	border-bottom:2px solid #821014;
+}
+
+header > nav {
+	display:table;
+	width:100%;
+}
+
+header > nav > ul {
+	padding:0;
+	margin:0 auto;
+	list-style:none;
+	display:table;
+}
+
+header > nav > ul > li {
+	float:left;
+	padding:15px 25px;
+	transition:0.5s;
+}
+
+header > nav > ul > li:hover {
+	background-color:#FFF;
+}
+
+header > nav > ul > li > a  {
+	color:#FFF;
+}
+
+header > nav > ul > li:hover > a {
+	color:#C61B21;
+}
+
+section {
+	margin-top: 20px;
+	padding:0 15px;
+}
+
+fieldset {
+	border-radius: 5px;
+}
+
+table.listagem {
+	border-collapse:collapse;
+	border:1px solid #C61B21;
+}
+
+section .listagem thead > tr,
+section .listagem tfoot > tr {
+	background-color:#C61B21;
+}
+
+section .listagem thead > tr > td,
+section .listagem tfoot > tr > td {
+	color:#FFF;
+	text-align:center;
+	border-color:#C61B21;
+}
+
+section .listagem tbody > tr > td {
+	text-align:center
+}
+
+section table.listagem td {
+	padding:10px 0;
+	border: 1px solid #C61B21
+}
+
+.botao_link {
+	text-align:center;
+	margin:15px 0;
+}
+
+.cadastro input:not([type="submit"]):not([type="reset"]):not([type="button"]),
+.cadastro select,
+.cadastro textarea {
+	padding:5px;
+	padding-left:5px;
+	border:none;
+	border-bottom:2px solid #ccc;
+	font-size:16px;
+	transition:0.5s;
+	color:#C61B21;
+	min-width:300px;
+	margin:10px 0;
+}
+
+.cadastro textarea {
+	min-height:100px;
+}
+
+.cadastro input:not([type="submit"]):not([type="reset"]):not([type="button"]):focus,
+.cadastro select:focus,
+.cadastro textarea:focus {
+	border-color:#C61B21;
+	color:#C61B21;
+}
+
+#form_pesquisa {
+	margin:20px auto;
+	width:80%;
+	padding:10px;
+	border: 1px solid #C61B21;
+	border-radius: 7px;
+}
+
+#form_pesquisa > h1 {
+	margin:0 auto;
+	margin-bottom: 15px;
+	text-align:center;
+	font-size:1.5em;
+	color: #333333;
+}
+
+#form_pesquisa > div {
+	width:85%;
+	margin:0 auto;
+}
+
+#overlay_venda {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9;
+	display: none;
+}
+
+#overlay_venda > div {
+	background-color: #FFFFFF;
+	width: 400px;
+	height: auto;
+	border-radius: 5px;
+	padding: 20px;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+#overlay_venda > div > form > div:first-child {
+	font-size:1.5em;
+}
+
+#overlay_venda > div > form > div:first-child > span {
+	text-decoration: underline;
+	color: #C61B21;
+}
+
+#overlay_venda > div > form > div {
+	margin-bottom: 15px;
+	color: #333333;	
+}
+
+#overlay_venda > div > form > div > input {
+	width: 50px;
+	color: #C61B21;
+	padding: 5px;
+	border: 0;
+	border-bottom: 1px solid #C61B21;
+}
+
+#overlay_venda > div > form > div:nth-child(4) {
+	display: flex;
+	justify-content: space-between;
+}
+
+#overlay_venda > div > form > div:nth-child(4) > input[type="submit"] {
+	font-size: 1.2em;
+	padding: 8px 15px;
+	border-radius: 3px;
+	border: 2px solid #C61B21;
+	width: auto;
+}
+
+#overlay_venda > div > form > div:nth-child(4) > input[type="submit"]:hover {
+	color: #FFFFFF;
+}
+
+#overlay_venda > div > form > div:nth-child(4) > input[type="button"] {
+	border-radius: 0;
+	width: auto;
+	padding: 5px 15px;
+	border-bottom: 2px solid #666;
+	color: #666;
+}
+
+#overlay_venda > div > form > div:nth-child(4) > input[type="button"]:hover {
+	background-color: #FFF;
+	border-color: #C61B21;
+	color: #C61B21;
+}
